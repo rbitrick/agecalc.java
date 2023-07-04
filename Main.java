@@ -21,13 +21,13 @@ public class Main {
             try {
                 Scanner userageinput = new Scanner(System.in);
                 String useragein = userageinput.nextLine(); 
-                userage = Integer.parseInt(useragein);
-                userageinput.close();
+                userage = Integer.parseInt(useragein); 
                 break;
+                
 
             }
             catch (Exception e) {
-                System.out.println("You've entered a number or symbol. Please try again");
+                System.out.println("You've entered a letter or symbol. Please try again");
                 continue;
             }
         }
@@ -38,7 +38,6 @@ public class Main {
                 Scanner anothernumberin = new Scanner(System.in);
                 String anothernumber = anothernumberin.nextLine();
                 newnumber = Integer.parseInt(anothernumber);
-                anothernumberin.close();
                 break;
 
             }
